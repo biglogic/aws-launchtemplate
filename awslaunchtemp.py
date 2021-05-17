@@ -1,6 +1,6 @@
 import boto3 
 
-session=boto3.Session(profile_name="atul",region_name='us-east-1')
+session=boto3.Session(profile_name="name",region_name='us-east-1')
 client = session.client('ec2')
 response = client.describe_launch_templates()
 print(response)
